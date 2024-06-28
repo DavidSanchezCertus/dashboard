@@ -3,4 +3,5 @@
 sudo fuser -k 5137/tcp || true
 # Iniciar la aplicación
 cd /home/ec2-user/dashboard
-sudo bash -c "PORT=5137 npm run dev" 
+sudo bash -c "PORT=5137 npm run dev" &
+exit 0

@@ -6,5 +6,4 @@ sudo rm -rf /home/ec2-user/dashboard/*
 sudo mkdir -p /home/ec2-user/dashboard
 sudo chown -R ec2-user:ec2-user /home/ec2-user/dashboard
 sudo chmod -R 755 /home/ec2-user/dashboard
-sudo chmod +x /home/ec2-user/dashboard/scripts/*
 echo "Directorio limpiado y permisos ajustados"

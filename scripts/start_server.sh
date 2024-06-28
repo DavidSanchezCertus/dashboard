@@ -3,7 +3,7 @@
 sudo fuser -k 5137/tcp || true
 # Iniciar la aplicación
 cd /home/ec2-user/dashboard
-nohup PORT=8080 npm run dev > /dev/null 2>&1 &
+nohup PORT=5137 npm run dev > /dev/null 2>&1 &
 #nohup npm run dev > /dev/null 2>&1 &
 sleep 5
 if curl -s http://localhost:5137 > /dev/null; then

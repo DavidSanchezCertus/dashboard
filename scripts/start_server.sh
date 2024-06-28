@@ -2,7 +2,7 @@
 # Detener cualquier proceso que esté usando el puerto 3000
 sudo fuser -k 5137/tcp || true
 # Iniciar la aplicación
-cd /home/ec2-user/san-backend
+cd /home/ec2-user/dashboard
 nohup npm start > /dev/null 2>&1 &
 sleep 5
 if curl -s http://localhost:5137 > /dev/null; then

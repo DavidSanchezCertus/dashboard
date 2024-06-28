@@ -5,7 +5,7 @@ sudo fuser -k 3000/tcp || true
 cd /home/ec2-user/san-backend
 nohup npm start > /dev/null 2>&1 &
 sleep 5
-if curl -s http://localhost:3000 > /dev/null; then
+if curl -s http://localhost:5137 > /dev/null; then
     echo "Se inicio la aplicación"
 else
     echo "Error: La aplicación fallo"
